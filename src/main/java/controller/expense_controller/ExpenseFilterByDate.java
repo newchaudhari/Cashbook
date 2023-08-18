@@ -99,7 +99,7 @@ public class ExpenseFilterByDate extends HttpServlet {
                 "            padding: 10px;\n" +
                 "        }" +
                 " </style>");
-        writer.println("<center><h1>Income Details</h1></center>");
+        writer.println("<center><h1>Expense Details</h1></center>");
         writer.print("<table ><thead>");
         writer.println("<tr>" +
                 "                <th>Income Id</th>" +
