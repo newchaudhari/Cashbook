@@ -1,4 +1,4 @@
-package controller.user;
+package controller.user_controller;
 
 import model.User;
 import service.UserService;
