@@ -18,6 +18,7 @@ public class GetIncomeDetailsByID extends HttpServlet {
         PrintWriter writer = resp.getWriter();
 
         int income_id = Integer.parseInt(req.getParameter("id"));
+        req.getSession(false);
 
         IncomeController incomeController = new IncomeController();
         Income incomeById = incomeController.getIncomeById(income_id);

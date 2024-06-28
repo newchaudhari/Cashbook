@@ -130,6 +130,7 @@
 
     </div>
     <%
+
         request.getSession(false);
         UserService userService = new UserService();
         Object id = session.getAttribute("id");

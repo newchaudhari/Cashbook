@@ -18,7 +18,6 @@ public class UserLogout extends HttpServlet {
         PrintWriter writer = resp.getWriter();
         HttpSession session = req.getSession(false);
         session.invalidate();
-
         writer.println("<style>      .center {\n" +
                 "            font-family: \"Times New Roman\", Times, serif;\n" +
                 "            text-align: center;\n" +

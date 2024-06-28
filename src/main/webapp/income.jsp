@@ -156,6 +156,7 @@
 
 
 <%
+
     Object id = session.getAttribute("id");
     int user_id = (Integer) id;
     IncomeController incomeController = new IncomeController();
@@ -167,6 +168,7 @@
        totalIncome += amount;
     }
 %>
+
 <div class="container">
         <h1 class="center">Income Details</h1>
         <div class="topnav">

@@ -16,6 +16,7 @@ public class GetExpenseDetailsByID extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter writer = resp.getWriter();
+        req.getSession(false);
 
         int expense_id = Integer.parseInt(req.getParameter("id"));
 

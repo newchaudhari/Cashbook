@@ -152,8 +152,8 @@
     </style>
 </head>
 <body>
-
 <%
+
     Object id = session.getAttribute("id");
     int user_id = (Integer) id;
    ExpenseController expenseController=new ExpenseController();

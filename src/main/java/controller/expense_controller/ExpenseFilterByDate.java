@@ -19,6 +19,7 @@ public class ExpenseFilterByDate extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter writer = resp.getWriter();
+        req.getSession(false);
 
         String date = req.getParameter("date");
         Date date1=Date.valueOf(date);
